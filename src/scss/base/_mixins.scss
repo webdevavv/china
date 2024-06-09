@@ -18,6 +18,12 @@
   }
 }
 
+@mixin vp-1180 {
+  @media (max-width: $vp-1180) {
+    @content;
+  }
+}
+
 @mixin vp-1024 {
   @media (max-width: ($vp-1024 - 1px)) {
     @content;
@@ -39,5 +45,13 @@
 @mixin vp-375 {
   @media (max-width: ($vp-375 - 1px)) {
     @content;
+  }
+}
+
+@mixin hover {
+  @media (min-width: 768px) {
+    &:hover {
+      @content;
+    }
   }
 }
