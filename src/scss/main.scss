@@ -26,7 +26,7 @@
     top: 0;
     @include vp-768 {
       width: 300px;
-      bottom: 10px;
+      bottom: -30px;
       top: auto;
       z-index: 10;
     }
@@ -44,10 +44,11 @@
     position: relative;
     max-width: 700px;
     width: 100%;
-    min-height: 400px;
+    min-height: 420px;
     background-color: rgba(214, 214, 214, 0.9);
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     padding: 50px 30px;
     padding-left: 50px;
     border-radius: 20px;
@@ -69,7 +70,7 @@
     }
     @include vp-768 {
       margin-top: 100px;
-      min-height: 300px;
+      min-height: 320px;
       padding: 30px 15px;
       padding-left: 30px;
       &::after {
@@ -133,7 +134,7 @@
     background-image: url(../img/our_block-bg.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: 65%;
     z-index: 1;
   }
 }
