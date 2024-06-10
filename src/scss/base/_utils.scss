@@ -20,7 +20,7 @@
 .section {
   padding: 100px 0;
   @include vp-768 {
-    padding: 70px 0;
+    padding: 50px 0;
   }
 }
 .dark_bg {
@@ -35,7 +35,7 @@
     color: #c4c4c4;
     font-weight: 400;
     @include vp-768 {
-      font-size: 28px;
+      font-size: 22px;
     }
     &::before {
       content: "";
@@ -81,6 +81,9 @@
       animation-direction: reverse;
     }
   }
+  @include vp-768 {
+    height: 50px;
+  }
 }
 
 .track {
@@ -112,6 +115,9 @@
       background-color: #000;
       border-radius: 50px;
     }
+    @include vp-768 {
+      font-size: 16px;
+    }
   }
 }
 
@@ -136,6 +142,9 @@ p {
     color: #e9e7e8;
     font-weight: 300;
   }
+  @include vp-768 {
+    font-size: 14px;
+  }
 }
 
 .panel-heading {
@@ -157,6 +166,13 @@ p {
     text-transform: uppercase;
     color: #000;
   }
+  @include vp-768 {
+    padding: 8px 30px;
+    padding-right: 15px;
+    span {
+      font-size: 14px;
+    }
+  }
 }
 .panel-heading i {
   display: flex;
@@ -164,13 +180,15 @@ p {
   align-items: center;
   transition: rotate 0.2s ease-in-out;
   min-width: 64px;
+  @include vp-768 {
+    min-width: 50px;
+  }
 }
 .panel-heading.in i {
   rotate: (45deg);
 }
-
 .panel-collapse {
-  border-radius: 200px;
+  border-radius: 50px;
   background-color: #e9e7e8;
   display: none;
   padding: 10px 50px;

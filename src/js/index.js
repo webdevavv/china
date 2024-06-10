@@ -70,9 +70,9 @@ var swiper = new Swiper(".feedback-slider", {
   spaceBetween: 20,
   navigation: { nextEl: ".feedback-next", prevEl: ".feedback-prev" },
   breakpoints: {
-    320: { slidesPerView: 1, spaceBetween: 10 },
-    500: { slidesPerView: 1, spaceBetween: 15 },
+    320: { slidesPerView: 1.1, spaceBetween: 10 },
+    500: { slidesPerView: 1.4, spaceBetween: 15 },
     768: { slidesPerView: 1.4, spaceBetween: 20 },
-    1024: { slidesPerView: 2.3, spaceBetween: 20 },
+    1024: { slidesPerView: 2.7, spaceBetween: 20 },
   },
 });

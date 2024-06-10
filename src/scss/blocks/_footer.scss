@@ -26,6 +26,9 @@
       color: #e9e7e8;
       font-size: 36px;
       font-weight: 400;
+      @include vp-768 {
+        font-size: 28px;
+      }
     }
     form {
       display: flex;
@@ -89,6 +92,10 @@
         color: rgb(233, 231, 232);
         font-size: 24px;
         font-weight: 400;
+        @include vp-768 {
+          font-size: 18px;
+          padding-left: 50px;
+        }
         &::before {
           content: "";
           position: absolute;
@@ -99,6 +106,10 @@
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
+          @include vp-768 {
+            width: 35px;
+            height: 35px;
+          }
         }
         &.tel {
           &::before {
@@ -124,6 +135,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include vp-768 {
+          width: 70px;
+          height: 70px;
+          svg {
+            width: 35px;
+            height: 35px;
+          }
+        }
       }
     }
     @include vp-1024 {

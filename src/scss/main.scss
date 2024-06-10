@@ -24,13 +24,22 @@
     position: absolute;
     right: 0;
     top: 0;
+    @include vp-768 {
+      width: 300px;
+      bottom: 10px;
+      top: auto;
+      z-index: 10;
+    }
   }
 }
 .first_block {
   height: 950px;
   display: flex;
   align-items: center;
-
+  @include vp-768 {
+    height: 700px;
+    align-items: flex-start;
+  }
   &__content {
     position: relative;
     max-width: 700px;
@@ -45,6 +54,9 @@
     h1 {
       color: #2b2b2a;
       font-size: 45px;
+      @include vp-768 {
+        font-size: 28px;
+      }
     }
     &::after {
       content: "";
@@ -55,6 +67,15 @@
       left: 30px;
       top: 10%;
     }
+    @include vp-768 {
+      margin-top: 100px;
+      min-height: 300px;
+      padding: 30px 15px;
+      padding-left: 30px;
+      &::after {
+        left: 15px;
+      }
+    }
   }
   &__text {
     flex: 1;
@@ -63,10 +84,16 @@
     color: #2b2b2a;
     font-size: 24px;
     max-width: 500px;
+    @include vp-768 {
+      font-size: 18px;
+    }
   }
   &__china-text {
     color: #c4c4c4;
     font-size: 48px;
+    @include vp-768 {
+      font-size: 26px;
+    }
   }
 }
 
@@ -138,12 +165,16 @@
       font-size: 32px;
       font-weight: 400;
       color: #fff;
+      @include vp-768 {
+        font-size: 28px;
+      }
     }
     &-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 20px;
       @media (max-width: 960px) {
+        max-width: 80%;
         grid-template-columns: 1fr;
       }
     }
@@ -229,6 +260,7 @@
     flex-direction: column;
     .image {
       width: 100%;
+      height: 300px;
     }
     .text_block {
       width: 100%;
@@ -266,7 +298,6 @@
   }
   @include vp-768 {
     max-width: 300px;
-    margin: 0 auto;
     margin-top: 30px;
     flex-direction: column;
     &__item {
@@ -290,12 +321,18 @@
       color: #fff;
       font-size: 32px;
       font-weight: 400;
+      @include vp-768 {
+        font-size: 28px;
+      }
     }
     p {
       color: #ffffff;
       font-size: 24px;
       opacity: 0.9;
       font-weight: 400;
+      @include vp-768 {
+        font-size: 18px;
+      }
     }
   }
   @include vp-768 {
@@ -384,6 +421,10 @@
     background-position: center;
     background-size: 100%;
     z-index: 1;
+    @include vp-1180 {
+      left: 0;
+      background-size: cover;
+    }
   }
   @include vp-768 {
     padding: 70px 0;
@@ -415,7 +456,8 @@
   padding: 40px;
   border-radius: 40px;
   @include vp-768 {
-    min-height: 430px;
+    min-height: 470px;
+    padding: 30px;
   }
   .author {
     position: relative;
