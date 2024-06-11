@@ -21,7 +21,7 @@ if (screenWidth <= 1023) {
 }
 // Burger
 
-const time = 2000;
+const time = 3000;
 const step = 1;
 let alreadyExecuted = false;
 

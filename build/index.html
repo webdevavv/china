@@ -76,6 +76,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
@@ -262,7 +263,7 @@
 
     <section>
       <div class="first_block__wrapper">
-        <div class="first_block__image">
+        <div class="first_block__image" data-aos="fade-right">
           <img src="img/first-block.png" alt="" />
         </div>
         <div class="container">
@@ -315,7 +316,9 @@
       <div class="container">
         <div class="title_block title_block--dark">
           <span class="china-title">教育课程</span>
-          <h2 class="accent-text">Программа <br />обучения</h2>
+          <h2 class="accent-text" data-aos="zoom-in-up">
+            Программа <br />обучения
+          </h2>
         </div>
         <div class="educ_block">
           <div class="educ_block__item">
@@ -370,10 +373,10 @@
       <div class="container">
         <div class="title_block title_block--dark" id="about-me">
           <span class="china-title">我自我介绍一下！</span>
-          <h2 class="accent-text">Расскажу о себе!</h2>
+          <h2 class="accent-text" data-aos="zoom-in-up">Расскажу о себе!</h2>
         </div>
         <div class="about-me__block">
-          <div class="image">
+          <div class="image" data-aos="fade-right">
             <img src="img/about-me.jpeg" alt="" />
           </div>
           <div class="text_block">
@@ -451,7 +454,7 @@
           <div class="our_plus">
             <div class="title_block">
               <span class="china-title">汉语的好处</span>
-              <h2 class="accent-text">Преимущества</h2>
+              <h2 class="accent-text" data-aos="zoom-in-up">Преимущества</h2>
             </div>
             <div class="text_block">
               <p class="light">
@@ -473,7 +476,7 @@
               </p>
             </div>
             <div class="our_plus__block">
-              <h2>Китайский язык – язык возможностей:</h2>
+              <h2 data-aos="zoom-in-up">Китайский язык – язык возможностей:</h2>
               <div class="our_plus__block-grid">
                 <div class="our_plus__block-item">
                   <span class="icon">
@@ -531,7 +534,9 @@
       <div class="container">
         <div class="title_block">
           <span class="china-title">我回答你的问题</span>
-          <h2 class="accent-text">Отвечаю на ваши <br />вопросы</h2>
+          <h2 class="accent-text" data-aos="zoom-in-up">
+            Отвечаю на ваши <br />вопросы
+          </h2>
         </div>
         <div class="qa__block">
           <div class="panel">
@@ -739,7 +744,7 @@
           <div class="feedback__title">
             <div class="title_block title_block--dark">
               <span class="china-title">评论</span>
-              <h2 class="accent-text">Отзывы</h2>
+              <h2 class="accent-text" data-aos="zoom-in-up">Отзывы</h2>
             </div>
             <div class="slider-nav">
               <div class="swiper-button-prev feedback-prev"></div>
@@ -831,7 +836,7 @@
   <div class="container">
     <div class="title_block">
       <span class="china-title">还有其他问题吗？</span>
-      <h2 class="accent-text">
+      <h2 class="accent-text" data-aos="zoom-in-up">
         Остались <br />
         вопросы?
       </h2>
@@ -870,7 +875,7 @@
   <div class="container">
     <div class="title_block">
       <span class="china-title">联系人</span>
-      <h2 class="accent-text">Контакты</h2>
+      <h2 class="accent-text" data-aos="zoom-in-up">Контакты</h2>
     </div>
     <div class="footer__contacts">
       <div class="footer__contacts-links">
@@ -943,6 +948,13 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/index.bundle.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        // once: true,
+      });
+    </script>
   </body>
 </html>
