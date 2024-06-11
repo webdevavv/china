@@ -24,11 +24,18 @@
     position: absolute;
     right: 0;
     top: 0;
+    z-index: 10;
+    @include vp-1180 {
+      width: 580px;
+    }
+    @include vp-1024 {
+      width: 450px;
+      top: auto;
+      bottom: 0;
+    }
     @include vp-768 {
       width: 300px;
       bottom: -30px;
-      top: auto;
-      z-index: 10;
     }
   }
 }
@@ -197,6 +204,9 @@
         font-size: 16px;
         color: #c4c4c4;
         font-weight: 400;
+        @include vp-768 {
+          filter: invert(0.5);
+        }
       }
     }
   }
@@ -343,56 +353,57 @@
 
 .educ_block {
   margin-top: 60px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  &__item {
-    position: relative;
-    max-width: 340px;
-    width: 100%;
-    background-color: #fff;
-    padding: 30px;
-    padding-bottom: 50px;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
+  @include vp-1024 {
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-      height: 100px;
-      width: 70px;
-      background-image: url(../img/Chinese-language11.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
+  }
+  @include vp-500 {
+    grid-template-columns: 1fr;
+  }
+  &__item {
+    a {
+      height: 100%;
+      background-color: #fff;
+      padding: 30px;
+      padding-top: 10px;
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      @include vp-768 {
+        padding: 15px;
+        padding-top: 0;
+      }
+      @include vp-500 {
+        gap: 8px;
+        border-radius: 20px;
+      }
+    }
+    .icon {
+      width: 60px;
+      height: 75px;
+      @include vp-768 {
+        width: 50px;
+        height: 65px;
+      }
     }
     h3 {
       font-size: 21px;
       color: #000;
       font-weight: 400;
+      @include vp-768 {
+        font-size: 18px;
+      }
     }
     p {
-      color: #000;
+      color: #6a6a6a;
       font-size: 16px;
       font-weight: 400;
-    }
-    &:nth-child(2) {
-      scale: 1.1;
-    }
-  }
-  @media (max-width: 900px) {
-    max-width: 600px;
-    margin: 0 auto;
-    margin-top: 30px;
-    flex-direction: column;
-    &__item {
-      max-width: 100%;
-      padding-right: 50px;
-      &:nth-child(2) {
-        scale: 1;
+      @include vp-768 {
+        font-size: 14px;
       }
     }
   }
