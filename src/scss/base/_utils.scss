@@ -18,10 +18,7 @@
 }
 
 .section {
-  padding: 100px 0;
-  @include vp-768 {
-    padding: 50px 0;
-  }
+  padding: 50px 0;
   @include vp-500 {
     padding: 35px 0;
   }
@@ -218,6 +215,50 @@ p {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    span {
+      color: #000;
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 5px;
+      @include vp-768 {
+        font-size: 20px;
+      }
+    }
+    li {
+      position: relative;
+      color: #000;
+      font-size: 18px;
+      opacity: 0.9;
+      font-weight: 400;
+      padding-left: 20px;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 12px;
+        height: 2px;
+        width: 10px;
+        border-radius: 1px;
+        background-color: #d3302a;
+      }
+      @include vp-768 {
+        font-size: 14px;
+      }
+    }
+  }
+  p {
+    margin-top: 10px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    @include vp-768 {
+      font-size: 18px;
+    }
+  }
 }
 
 .slider-nav {
@@ -302,6 +343,11 @@ p {
       background-position: center center;
       display: none;
     }
+    &.checkmark--dark {
+      &::after {
+        background-image: url("data:image/svg+xml,%3Csvg width='24px' height='24px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M19.716 4.386a1 1 0 0 1 1.572 1.236L10.665 19.136a1.5 1.5 0 0 1-2.324.042l-5.104-6.032a1 1 0 1 1 1.526-1.292l4.708 5.564L19.716 4.386z' fill='%23000000'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+      }
+    }
   }
   input:checked ~ .checkmark {
     background-color: var(--green);
@@ -311,3 +357,117 @@ p {
     display: block;
   }
 }
+
+// modals
+
+/*-- Modal Window --*/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+.modal-window {
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  background-color: #222222;
+  border-radius: 12px;
+
+  padding: 32px;
+  @include vp-768 {
+    max-width: 300px;
+    padding: 24px;
+    min-height: 250px;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    .modal-window__title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      h2 {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+    .close-modal {
+      position: relative;
+      cursor: pointer;
+      height: 32px;
+      min-width: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      .core {
+        position: absolute;
+        z-index: 5;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  .modal-content {
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .input {
+      input {
+        width: 100%;
+        height: 45px;
+        color: #fff;
+        border-bottom: 1px solid rgb(233, 231, 232);
+        &::placeholder {
+          color: rgb(122, 122, 122);
+        }
+      }
+    }
+    .input__checkbox {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      span {
+        color: rgb(122, 122, 122);
+      }
+    }
+    .form__button {
+      margin-top: 20px;
+      input {
+        height: 60px;
+        padding: 0 40px;
+        color: #fff;
+        border-radius: 60px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #d32f2a;
+      }
+    }
+    @include vp-768 {
+      width: 100%;
+    }
+  }
+}
+.open {
+  display: flex;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+// modals

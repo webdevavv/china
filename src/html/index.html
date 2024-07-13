@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="imagetoolbar" content="no" />
     <title>Онлайн обучение китайскому языку в Иркутске</title>
     <meta
       name="description"
@@ -163,10 +164,14 @@
     @@include('blocks/header.html')
 
     <section>
-      <div class="first_block__wrapper">
+      <div
+        class="first_block__wrapper"
+        style="--bgImage: url(../img/first-block_bg.webp)"
+      >
         <div class="first_block__image" data-aos="fade-right">
           <img
-            src="img/first-block.png"
+            class="locked"
+            src="img/items/444.webp"
             alt="Онлайн обучение китайскому языку"
           />
         </div>
@@ -178,7 +183,7 @@
                 >Китайский язык - ключ к успеху в будущем.</span
               >
               <span class="first_block__china-text">
-                中文是未来成功的关键。
+                中文是获得成功的关键
               </span>
               <a href="#contact-form" class="red-btn">Записаться на курс</a>
             </div>
@@ -224,7 +229,7 @@
         </div>
         <div class="educ_block">
           <div class="educ_block__item">
-            <a href="#">
+            <a href="/chinise-from-scratch.html">
               <div class="icon">
                 <img src="img/Chinese-language11.png" />
               </div>
@@ -233,7 +238,7 @@
             </a>
           </div>
           <div class="educ_block__item">
-            <a href="#">
+            <a href="/improving-your-chinese-language-level.html">
               <div class="icon">
                 <img src="img/Chinese-language11.png" />
               </div>
@@ -242,7 +247,7 @@
             </a>
           </div>
           <div class="educ_block__item">
-            <a href="#">
+            <a href="/chinese-for-children.html">
               <div class="icon">
                 <img src="img/Chinese-language11.png" />
               </div>
@@ -251,7 +256,7 @@
             </a>
           </div>
           <div class="educ_block__item">
-            <a href="#">
+            <a href="/business-chinese.html">
               <div class="icon">
                 <img src="img/Chinese-language11.png" />
               </div>
@@ -260,7 +265,7 @@
             </a>
           </div>
           <div class="educ_block__item">
-            <a href="#">
+            <a href="/preparation-for-hsk.html">
               <div class="icon">
                 <img src="img/Chinese-language11.png" />
               </div>
@@ -269,7 +274,7 @@
             </a>
           </div>
           <div class="educ_block__item">
-            <a href="#">
+            <a href="/spoken-chinese.html">
               <div class="icon">
                 <img src="img/Chinese-language11.png" />
               </div>
@@ -280,7 +285,7 @@
             </a>
           </div>
           <div class="educ_block__item">
-            <a href="#">
+            <a href="/travel-course.html">
               <div class="icon">
                 <img src="img/Chinese-language11.png" />
               </div>
@@ -289,7 +294,7 @@
             </a>
           </div>
           <div class="educ_block__item">
-            <a href="#">
+            <a href="/synonyms-course.html">
               <div class="icon">
                 <img src="img/Chinese-language11.png" />
               </div>
@@ -298,7 +303,7 @@
             </a>
           </div>
           <div class="educ_block__item">
-            <a href="#">
+            <a href="/grammar-course.html">
               <div class="icon">
                 <img src="img/Chinese-language11.png" />
               </div>
@@ -791,15 +796,89 @@
       </div>
     </section>
 
+    <section class="dark_bg" id="contact-form">
+      <div class="container">
+        <div class="title_block">
+          <span class="china-title">还有其他问题吗？</span>
+          <h2 class="accent-text" data-aos="zoom-in-up">Остались вопросы?</h2>
+        </div>
+        <div class="footer__form-wrapper">
+          <div class="image">
+            <img
+              src="img/footer-form.png"
+              alt="онлайн репетитор китайского в иркутске"
+            />
+          </div>
+          <div class="footer__form">
+            <h2>Оставьте свои контакты и я свяжусь с вами</h2>
+            <form action="send.php" method="post">
+              <div class="input">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя"
+                  required
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Ваш Email"
+                  required
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="tel"
+                  id="phone"
+                  name="tel"
+                  placeholder="+7(999)999-99-99"
+                  required
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  name="text"
+                  placeholder="Ваш вопрос"
+                  required
+                />
+              </div>
+              <label class="input__checkbox">
+                <div class="checkbox">
+                  <input type="checkbox" id="checkbox" required />
+                  <span class="checkmark"></span>
+                </div>
+                <span>Согласен с политикой конфиденциальности</span>
+              </label>
+              <div class="form__button">
+                <input type="submit" value="Отправить" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     @@include('blocks/footer.html')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/imask"></script>
     <script src="./js/index.bundle.js"></script>
     <script>
       AOS.init({
         duration: 800,
         once: true,
+      });
+      var element = document.getElementById("phone");
+      element.addEventListener("focus", () => {
+        var maskOptions = {
+          mask: "+7(000)000-00-00",
+          lazy: false,
+        };
+        var mask = new IMask(element, maskOptions);
       });
     </script>
   </body>
