@@ -131,7 +131,7 @@ $tel = trim($tel);
     <div class="container">
       <div class="error_page">
         <div class="error_page__item send-img">
-          <img src="./img/footer.png" alt="Онлайн школа китайского языка в Иркутске">
+          <img src="./img/footer.webp" alt="Онлайн школа китайского языка в Иркутске">
         </div>
         <div class="error_page__text">
           <?php if (
@@ -155,7 +155,7 @@ $tel = trim($tel);
                 <div class="educ_block__item">
                   <a href="/chinise-from-scratch.html">
                     <div class="icon">
-                      <img src="img/Chinese-language11.png" />
+                      <img src="img/Chinese-language11.webp" />
                     </div>
                     <h3>КИТАЙСКИЙ С НУЛЯ</h3>
                     <p>Заговори на самом популярном языке в мире</p>
@@ -164,9 +164,9 @@ $tel = trim($tel);
               </div>
               <div class="swiper-slide">
                 <div class="educ_block__item">
-                  <a href="#">
+                  <a href="/improving-your-chinese-language-level.html">
                     <div class="icon">
-                      <img src="img/Chinese-language11.png" />
+                      <img src="img/Chinese-language11.webp" />
                     </div>
                     <h3>ПОВЫШЕНИЕ УРОВНЯ КИТАЙСКОГО ЯЗЫКА</h3>
                     <p>Прокачай свой уровень</p>
@@ -175,9 +175,9 @@ $tel = trim($tel);
               </div>
               <div class="swiper-slide">
                 <div class="educ_block__item">
-                  <a href="#">
+                  <a href="/chinese-for-children.html">
                     <div class="icon">
-                      <img src="img/Chinese-language11.png" />
+                      <img src="img/Chinese-language11.webp" />
                     </div>
                     <h3>КИТАЙСКИЙ ДЛЯ ДЕТЕЙ</h3>
                     <p>Открой мир китайского языка своему ребенку</p>
@@ -186,9 +186,9 @@ $tel = trim($tel);
               </div>
               <div class="swiper-slide">
                 <div class="educ_block__item">
-                  <a href="#">
+                  <a href="/business-chinese.html">
                     <div class="icon">
-                      <img src="img/Chinese-language11.png" />
+                      <img src="img/Chinese-language11.webp" />
                     </div>
                     <h3>БИЗНЕС КИТАЙСКИЙ</h3>
                     <p>Начни работу с Китаем без чьей-либо помощи</p>
@@ -197,9 +197,9 @@ $tel = trim($tel);
               </div>
               <div class="swiper-slide">
                 <div class="educ_block__item">
-                  <a href="#">
+                  <a href="/preparation-for-hsk.html">
                     <div class="icon">
-                      <img src="img/Chinese-language11.png" />
+                      <img src="img/Chinese-language11.webp" />
                     </div>
                     <h3>ПОДГОТОВКА К МЕЖДУНАРОДНОМУ ЭКЗАМЕНУ HSK</h3>
                     <p>Подготовим и поможем сдать на высокий балл</p>
@@ -208,9 +208,9 @@ $tel = trim($tel);
               </div>
               <div class="swiper-slide">
                 <div class="educ_block__item">
-                  <a href="#">
+                  <a href="/spoken-chinese.html">
                     <div class="icon">
-                      <img src="img/Chinese-language11.png" />
+                      <img src="img/Chinese-language11.webp" />
                     </div>
                     <h3>РАЗГОВОРНЫЙ КИТАЙСКИЙ</h3>
                     <p>
@@ -222,9 +222,9 @@ $tel = trim($tel);
               </div>
               <div class="swiper-slide">
                 <div class="educ_block__item">
-                  <a href="#">
+                  <a href="/travel-course.html">
                     <div class="icon">
-                      <img src="img/Chinese-language11.png" />
+                      <img src="img/Chinese-language11.webp" />
                     </div>
                     <h3>КИТАЙСКИЙ ДЛЯ ПУТЕШЕСТВИЙ</h3>
                     <p>Сможешь обойтись без переводчика</p>
@@ -233,9 +233,9 @@ $tel = trim($tel);
               </div>
               <div class="swiper-slide">
                 <div class="educ_block__item">
-                  <a href="#">
+                  <a href="/synonyms-course.html">
                     <div class="icon">
-                      <img src="img/Chinese-language11.png" />
+                      <img src="img/Chinese-language11.webp" />
                     </div>
                     <h3>КУРС ПО СИНОНИМАМ</h3>
                     <p>Синонимы больше не проблема</p>
@@ -244,9 +244,9 @@ $tel = trim($tel);
               </div>
               <div class="swiper-slide">
                 <div class="educ_block__item">
-                  <a href="#">
+                  <a href="/grammar-course.html">
                     <div class="icon">
-                      <img src="img/Chinese-language11.png" />
+                      <img src="img/Chinese-language11.webp" />
                     </div>
                     <h3>ГРАММАТИЧЕСКИЙ КУРС</h3>
                     <p>Восполни пробелы в грамматике</p>

@@ -140,7 +140,7 @@ $text = trim($text);
     <div class="container">
       <div class="error_page">
         <div class="error_page__item send-img">
-          <img src="./img/footer.png" alt="Онлайн школа китайского языка в Иркутске">
+          <img src="./img/footer.webp" alt="Онлайн школа китайского языка в Иркутске">
         </div>
         <div class="error_page__text">
           <?php
